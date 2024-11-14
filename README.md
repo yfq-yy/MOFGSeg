@@ -82,14 +82,10 @@ To train on other datasets or splits, please modify
 Model weights and training logs will be released soon.
 
 #### 4.1 PASCAL VOC 2012 _original_
-<p align="left">
-<img src="./docs/pascal_org.png" width=60% class="center">
-</p>
-
 
 | Splits | 1/16 | 1/8  | 1/4 | 1/2 | Full |
 | :- | - | - | - | - | - |
-| Weights of _**AllSpark**_ | [76.07]() | [78.41](https://hkustconnect-my.sharepoint.com/:u:/g/personal/hwanggr_connect_ust_hk/ESsfJbP0ipxAmhzzdESOIdgBKv3OLceKhpJscDaxTo9Grg?e=UDxRmb\&download\=1) | [79.77]() | [80.75]() | [82.12]() |
+| Weights of _**Ours**_ | [75.87]() | [78.97] | [80.03]() | [82.24]() | [83.22]() |
 
 
 #### 4.2 PASCAL VOC 2012 _augmented_
@@ -100,7 +96,7 @@ Model weights and training logs will be released soon.
 
 | Splits | 1/16 | 1/8  | 1/4 | 1/2 |
 | :- | - | - | - | - |
-| Weights of _**AllSpark**_ | 78.32 | 79.98 | 80.42 | 81.14 |
+| Weights of _**Ours**_ | 78.67 | 79.36 | 79.79 | 80.98 |
 
 
 
@@ -109,7 +105,7 @@ Model weights and training logs will be released soon.
 
 | Splits | 1/16 | 1/8  | 1/4 | 1/2 |
 | :- | - | - | - | - |
-| Weights of _**AllSpark**_ | 78.33 | 79.24 | 80.56 | 81.39 |
+| Weights of _**Ours**_ | 51.99 | 55.95 | 64.88 | 67.64 |
 
 
 #### 4.4 Tas500
@@ -117,20 +113,21 @@ Model weights and training logs will be released soon.
 
 | Splits | 1/16 | 1/8  | 1/4 | 1/2 |
 | :- | - | - | - | - |
-| Weights of _**AllSpark**_ | 78.33 | 79.24 | 80.56 | 81.39 |
+| Weights of _**Ours**_ | 46.70 | 47.46 | 54.47 | 54.94 |
 
 
 
 #### 4.5 loveda
 
 
-| Splits | 1/512 | 1/256  | 1/128 | 1/64 |
+
+| Splits | 1/16 | 1/8  | 1/4 | 1/2 |
 | :- | - | - | - | - |
-| Weights of _**AllSpark**_ | [34.10](https://hkustconnect-my.sharepoint.com/:u:/g/personal/hwanggr_connect_ust_hk/EaabBYut1PNEtPeQRCIlMtEBxpmkvbZ_ERmBGwTObS0H_g?e=69ToFl\&download\=1) | [41.65](https://hkustconnect-my.sharepoint.com/:u:/g/personal/hwanggr_connect_ust_hk/EfIyzut1SwBMha25yKpeIWIBwPfhc3NzdGLjdlyuKdr0ig?e=H58uKd\&download\=1) | [45.48](https://hkustconnect-my.sharepoint.com/:u:/g/personal/hwanggr_connect_ust_hk/EUHmlDEXNPZPuq5qRfhTChgBs9GZ2n9qVRYdPWHGwgkYBQ?e=yRNTcg\&download\=1) | [49.56](https://hkustconnect-my.sharepoint.com/:u:/g/personal/hwanggr_connect_ust_hk/ETeZ7agRCkRIjJeONaL8BYEBKIe4rDI3ZgRkEDdBcVPPOA?e=56diA2\&download\=1) |
+| Weights of _**Ours**_ | 55.95 | 55.48 | 56.20 | 56.79 |
 
 
 
 ## Acknowlegement
-_**AllSpark**_ is built upon [AllSpark](https://github.com/xmed-lab/AllSpark.git), [UniMatch](https://github.com/LiheYoung/UniMatch) and [SegFormer](https://github.com/NVlabs/SegFormer). We thank their authors for making the source code publicly available.
+_**Ours**_ is built upon [AllSpark](https://github.com/xmed-lab/AllSpark.git), [UniMatch](https://github.com/LiheYoung/UniMatch) and [SegFormer](https://github.com/NVlabs/SegFormer). We thank their authors for making the source code publicly available.
 
 
