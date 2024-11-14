@@ -12,8 +12,8 @@ Multi-object semantic segmentation has made significant progress. However, Few w
 First, clone this repo:
 
 ```shell
-git clone https://github.com/xmed-lab/AllSpark.git
-cd AllSpark/
+git clone https://github.com/yfq-yy/MOFGSeg.git
+cd MOFGSeg/
 ```
 
 Then, create a new environment and install the requirements:
@@ -38,22 +38,6 @@ Download the dataset with wget:
 wget https://hkustconnect-my.sharepoint.com/:u:/g/personal/hwanggr_connect_ust_hk/EcgD_nffqThPvSVXQz6-8T0B3K9BeUiJLkY_J-NvGscBVA\?e\=2b0MdI\&download\=1 -O pascal.zip
 unzip pascal.zip
 ```
-
-#### 2.2 Cityscapes Dataset
-Download the dataset with wget:
-```shell
-wget https://hkustconnect-my.sharepoint.com/:u:/g/personal/hwanggr_connect_ust_hk/EWoa_9YSu6RHlDpRw_eZiPUBjcY0ZU6ZpRCEG0Xp03WFxg\?e\=LtHLyB\&download\=1 -O cityscapes.zip
-unzip cityscapes.zip
-```
-
-#### 2.3 COCO Dataset
-Download the dataset with wget:
-```shell
-wget https://hkustconnect-my.sharepoint.com/:u:/g/personal/hwanggr_connect_ust_hk/EXCErskA_WFLgGTqOMgHcAABiwH_ncy7IBg7jMYn963BpA\?e\=SQTCWg\&download\=1 -O coco.zip
-unzip coco.zip
-```
-
-
 Then your file structure will be like:
 
 ```
@@ -61,14 +45,6 @@ Then your file structure will be like:
     ├── JPEGImages
     └── SegmentationClass
     
-├── cityscapes
-    ├── leftImg8bit
-    └── gtFine
-    
-├── coco
-    ├── train2017
-    ├── val2017
-    └── masks
 ```
 
 Next, download the following [pretrained weights](https://hkustconnect-my.sharepoint.com/:f:/g/personal/hwanggr_connect_ust_hk/Eobv9tk6a6RJqGXEDm2D_TcB2mEn4r2-BLDkotZHkd2l6w?e=fJBy7v).
@@ -95,12 +71,9 @@ sh scripts/train.sh <num_gpu> <port>
 # to fully reproduce our results, the <num_gpu> should be set as 4 on all three datasets
 # otherwise, you need to adjust the learning rate accordingly
 
-# or use slurm
-# sh scripts/slurm_train.sh <num_gpu> <port> <partition>
-```
 
 To train on other datasets or splits, please modify
-``dataset`` and ``split`` in [train.sh](https://github.com/xmed-lab/AllSpark/blob/main/scripts/train.sh).
+``dataset`` and ``split`` in  train.sh.
 
 
 ### 4. Results
@@ -130,12 +103,15 @@ Model weights and training logs will be released soon.
 
 
 
+#### 4.3 UAV-SEG
 
-#### 4.3 Cityscapes
 
-<p align="left">
-<img src="./docs/cityscapes.png" width=60% class="center">
-</p>
+| Splits | 1/16 | 1/8  | 1/4 | 1/2 |
+| :- | - | - | - | - |
+| Weights of _**AllSpark**_ | 78.33 | 79.24 | 80.56 | 81.39 |
+
+
+#### 4.4 Tas500
 
 
 | Splits | 1/16 | 1/8  | 1/4 | 1/2 |
@@ -144,11 +120,7 @@ Model weights and training logs will be released soon.
 
 
 
-#### 4.4 COCO
-
-<p align="left">
-<img src="./docs/coco.png" width=60% class="center">
-</p>
+#### 4.5 loveda
 
 
 | Splits | 1/512 | 1/256  | 1/128 | 1/64 |
@@ -157,22 +129,7 @@ Model weights and training logs will be released soon.
 
 
 
-
-## Citation
-
-If you find this project useful, please consider citing:
-
-```bibtex
-@inproceedings{allspark,
-  title={AllSpark: Reborn Labeled Features from Unlabeled in Transformer for Semi-Supervised Semantic Segmentation},
-  author={Wang, Haonan and Zhang, Qixiang and Li, Yi and Li, Xiaomeng},
-  booktitle={CVPR},
-  year={2024}
-}
-```
-
-
 ## Acknowlegement
-_**AllSpark**_ is built upon [UniMatch](https://github.com/LiheYoung/UniMatch) and [SegFormer](https://github.com/NVlabs/SegFormer). We thank their authors for making the source code publicly available.
+_**AllSpark**_ is built upon [AllSpark](https://github.com/xmed-lab/AllSpark.git), [UniMatch](https://github.com/LiheYoung/UniMatch) and [SegFormer](https://github.com/NVlabs/SegFormer). We thank their authors for making the source code publicly available.
 
 
