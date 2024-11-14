@@ -85,7 +85,7 @@ Model weights and training logs will be released soon.
 
 | Splits | 1/16 | 1/8  | 1/4 | 1/2 | Full |
 | :- | - | - | - | - | - |
-| Weights of _**Ours**_ | [75.87]() | [78.97] | [80.03]() | [82.24]() | [83.22]() |
+| Weights of _**Ours**_ | 75.87 | 78.97 | 80.03 | 82.24 | 83.22 |
 
 
 #### 4.2 PASCAL VOC 2012 _augmented_
