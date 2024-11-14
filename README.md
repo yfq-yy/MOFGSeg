@@ -68,7 +68,6 @@ wget https://hkustconnect-my.sharepoint.com/:u:/g/personal/hwanggr_connect_ust_h
 ```bash
 # use torch.distributed.launch
 sh scripts/train.sh <num_gpu> <port>
-# to fully reproduce our results, the <num_gpu> should be set as 4 on all three datasets
 # otherwise, you need to adjust the learning rate accordingly
 
 
