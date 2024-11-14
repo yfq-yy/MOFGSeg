@@ -90,10 +90,6 @@ Model weights and training logs will be released soon.
 
 #### 4.2 PASCAL VOC 2012 _augmented_
 
-<p align="left">
-<img src="./docs/pascal_aug.png" width=60% class="center">
-</p>
-
 | Splits | 1/16 | 1/8  | 1/4 | 1/2 |
 | :- | - | - | - | - |
 | Weights of _**Ours**_ | 78.67 | 79.36 | 79.79 | 80.98 |
