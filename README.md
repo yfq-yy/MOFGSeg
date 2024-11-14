@@ -1,29 +1,9 @@
 #  Semi-Supervised Learning for Multi-Object Segmentation with  Fine-Grained Classes
 
 
-<p align="center">
-<img src="./docs/allspark.jpg" width=39% height=65% class="center">
-<img src="./docs/framework.png" width=60% height=65% class="center">
-</p>
 
-The _**AllSpark**_ is a powerful Cybertronian artifact in the film series of _Transformers_. It was used to reborn Optimus Prime in _Transformers: Revenge of the Fallen_, which aligns well with our core idea.
+Multi-object semantic segmentation has made significant progress. However, Few work has focused on multi-object semantic segmentation with fine-grained classes. There are two reasons. Firstly, as segmentation becomes more fine-grained, the annotation becomes more complex and requires extensive domain-specific expertise and substantial time resources. Secondly, fine-grained segmentation poses unique challenges due to high inter-class similarity and large intra-class variance. To address these problems, we propose a semi-supervised learning method by weighted constrastive learing and boundary-aware loss for fine-grained segmentation. Specifically, we employ student-teacher dual networks and combined with consistency regularization to generate pseudo-labeling for unlabeled images. We further present a weighted contrastive learning to increase the distribution distance between different classes in the feature space, and a boundary-aware module to enhance boundary cues features. Our method demonstrates superior mean Intersection over Union (MIoU) performance compared to existing semi-supervised semantic segmentation techniques across multiple datasets, including the fine-grained ocean dataset UAV-SEG, public fine-grained datasets TAS500, the remote sensing dataset LoveDA, and the general semantic segmentation dataset Pascal VOC.
 
--------
-
-## 💥 Motivation
-In this work, we discovered that simply converting existing semi-segmentation methods into a pure-transformer framework is ineffective. 
-<p align="center">
-<img src="./docs/backbone.png" width=50% height=80% class="center">
-<img src="./docs/issue.jpg" width=35% height=65% class="center">
-</p>
-
-- The first reason is that transformers inherently possess weaker inductive bias compared to CNNs, so transformers heavily rely on a large volume of training data to perform well. 
-
-- The more critical issue lies in the existing semi-supervised segmentation frameworks. These frameworks separate the training flows for labeled and unlabeled data, which aggravates the overfitting issue of transformers on the limited labeled data.
-
-Thus, we propose to _intervene and diversify_ the labeled data flow with unlabeled data in the feature domain, leading to improvements in generalizability.
-
--------
 
 ## 🛠️ Usage
 
