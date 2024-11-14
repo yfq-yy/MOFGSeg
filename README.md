@@ -18,8 +18,8 @@ cd MOFGSeg/
 
 Then, create a new environment and install the requirements:
 ```shell
-conda create -n allspark python=3.7
-conda activate allspark
+conda create -n mofgseg python=3.7
+conda activate mofgseg
 pip install torch==1.12.0+cu116 torchvision==0.13.0+cu116 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu116
 pip install tensorboard
 pip install six
@@ -87,35 +87,25 @@ Model weights and training logs will be released soon.
 | :- | - | - | - | - | - |
 | Weights of _**Ours**_ | 75.87 | 78.97 | 80.03 | 82.24 | 83.22 |
 
-
 #### 4.2 PASCAL VOC 2012 _augmented_
 
 | Splits | 1/16 | 1/8  | 1/4 | 1/2 |
 | :- | - | - | - | - |
 | Weights of _**Ours**_ | 78.67 | 79.36 | 79.79 | 80.98 |
 
-
-
 #### 4.3 UAV-SEG
-
 
 | Splits | 1/16 | 1/8  | 1/4 | 1/2 |
 | :- | - | - | - | - |
 | Weights of _**Ours**_ | 51.99 | 55.95 | 64.88 | 67.64 |
 
-
 #### 4.4 Tas500
-
 
 | Splits | 1/16 | 1/8  | 1/4 | 1/2 |
 | :- | - | - | - | - |
 | Weights of _**Ours**_ | 46.70 | 47.46 | 54.47 | 54.94 |
 
-
-
 #### 4.5 loveda
-
-
 
 | Splits | 1/16 | 1/8  | 1/4 | 1/2 |
 | :- | - | - | - | - |
